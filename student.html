@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think Beyond The Page | Solving the Memorization Crisis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .rejection-letter {
+            transform: rotate(-2deg);
+            box-shadow: 20px 20px 60px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+        }
+
+        .rejection-letter:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stats-card:hover i { transform: scale(1.2); color: #ef4444; transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center shadow-sm">
+        <div class="text-2xl font-extrabold tracking-tighter text-blue-600">THINK<span class="text-slate-400">TANK.</span></div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#problem" class="hover:text-blue-600 transition">The Problem</a>
+            <a href="#awareness" class="hover:text-blue-600 transition">Awareness</a>
+            <a href="#solutions" class="hover:text-blue-600 transition">Solutions</a>
+        </div>
+        <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">Join the Move</button>
+    </nav>
+
+    <!-- Hero Section: The Rejection -->
+    <header class="pt-32 pb-20 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="bg-red-100 text-red-600 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">The Harsh Reality</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mt-6 leading-tight">
+                Perfect Grades. <br><span class="gradient-text">Zero Job Offers.</span>
+            </h1>
+            <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+                We've taught a generation how to <b>remember</b>, but we forgot to teach them how to <b>think</b>. In 2025, 70% of companies prioritize skills over degrees. Is your education preparing you for the desk or the bin?
+            </p>
+            <div class="mt-10 flex space-x-4">
+                <a href="#problem" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition">Analyze the Gap</a>
+                <a href="#awareness" class="border-2 border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition text-slate-600">Watch Story</a>
+            </div>
+        </div>
+        
+        <div class="relative">
+            <!-- Mock Rejection Letter -->
+            <div class="rejection-letter bg-white p-8 md:p-12 border border-slate-200 rounded-sm shadow-2xl relative z-10">
+                <div class="flex justify-between items-start mb-8">
+                    <div class="w-12 h-12 bg-slate-100 rounded-full"></div>
+                    <span class="text-slate-400 text-sm italic underline">PRIVATE & CONFIDENTIAL</span>
+                </div>
+                <h3 class="text-xl font-bold mb-4">RE: Application for Junior Analyst</h3>
+                <p class="text-slate-600 space-y-4 text-sm leading-loose">
+                    Dear Graduate,<br><br>
+                    Thank you for applying. While your academic record is impeccable, we are unable to move forward. <br><br>
+                    During the assessment, you excelled at recalling formulas but struggled to apply them to our <b>unstructured real-world problem</b>. We need thinkers, not databases.
+                    <br><br>
+                    Best regards,<br>
+                    <b>Global Hiring Tech</b>
+                </p>
+                <div class="absolute -bottom-4 -right-4 bg-red-500 text-white p-4 rounded-lg font-bold shadow-lg">REJECTED</div>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute -top-10 -right-10 w-64 h-64 bg-blue-100 rounded-full blur-3xl opacity-50"></div>
+        </div>
+    </header>
+
+    <!-- Stats / Awareness Section -->
+    <section id="problem" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">The Skill-Gap Crisis</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Traditional education focuses on "What to think" while the world asks "How to solve."</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="stats-card p-10 bg-slate-50 rounded-3xl border border-slate-100 text-center">
+                    <i class="fa-solid fa-user-xmark text-4xl text-blue-500 mb-6"></i>
+                    <h4 class="text-4xl font-black mb-2 text-slate-800">54%</h4>
+                    <p class="text-slate-500 font-medium">Graduates unemployable due to lack of critical soft skills.</p>
+                </div>
+                <div class="stats-card p-10 bg-slate-50 rounded-3xl border border-slate-100 text-center">
+                    <i class="fa-solid fa-brain text-4xl text-purple-500 mb-6"></i>
+                    <h4 class="text-4xl font-black mb-2 text-slate-800">70%</h4>
+                    <p class="text-slate-500 font-medium">Employers now use skills-based hiring over GPA.</p>
+                </div>
+                <div class="stats-card p-10 bg-slate-50 rounded-3xl border border-slate-100 text-center">
+                    <i class="fa-solid fa-earth-americas text-4xl text-emerald-500 mb-6"></i>
+                    <h4 class="text-4xl font-black mb-2 text-slate-800">90%</h4>
+                    <p class="text-slate-500 font-medium">Higher failure rate for international students in problem-solving roles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Role-Based Solutions -->
+    <section id="solutions" class="py-20 px-6 bg-slate-900 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <h2 class="text-4xl font-extrabold mb-12 text-center">How Might We Evolve?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- For Students -->
+                <div class="p-8 border border-slate-700 rounded-2xl hover:border-blue-500 transition">
+                    <span class="text-blue-400 font-bold mb-4 block">FOR STUDENTS</span>
+                    <h3 class="text-2xl font-bold mb-4">Stop Highlighting, Start Questioning</h3>
+                    <ul class="space-y-3 text-slate-400 text-sm">
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Practice "Feynman Technique"</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Join project-based hackathons</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Solve 1 real-world bug per week</li>
+                    </ul>
+                </div>
+
+                <!-- For Teachers -->
+                <div class="p-8 border border-slate-700 rounded-2xl hover:border-purple-500 transition">
+                    <span class="text-purple-400 font-bold mb-4 block">FOR TEACHERS</span>
+                    <h3 class="text-2xl font-bold mb-4">Flip the Classroom</h3>
+                    <ul class="space-y-3 text-slate-400 text-sm">
+                        <li><i class="fa-solid fa-check text-purple-500 mr-2"></i> Assign open-ended case studies</li>
+                        <li><i class="fa-solid fa-check text-purple-500 mr-2"></i> Reward "The Wrong Path" (Analysis)</li>
+                        <li><i class="fa-solid fa-check text-purple-500 mr-2"></i> Ban rote-learning exams</li>
+                    </ul>
+                </div>
+
+                <!-- For Global Families -->
+                <div class="p-8 border border-slate-700 rounded-2xl hover:border-emerald-500 transition">
+                    <span class="text-emerald-400 font-bold mb-4 block">FOR PARENTS/FOREIGN</span>
+                    <h3 class="text-2xl font-bold mb-4">Bridge the Culture Gap</h3>
+                    <ul class="space-y-3 text-slate-400 text-sm">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Encourage "Why" over "How Much"</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Support vocational experimentation</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Focus on adaptive communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interaction: The "Thinker" Quiz Teaser -->
+    <section class="py-20 bg-blue-600 text-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6 italic">"The test of intelligence is not how much we know how to do, but how we behave when we don't know what to do."</h2>
+            <p class="mb-10 text-blue-100">Are you a Memorizer or a Solver? Take our 2-minute diagnostic.</p>
+            <button class="bg-white text-blue-600 px-10 py-4 rounded-full font-extrabold text-xl hover:scale-105 transition shadow-2xl">Start Diagnostic</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-50 border-t border-slate-200 text-center text-slate-400 text-sm">
+        <p>&copy; 2025 ThinkTank Initiative. Redefining Education for the 21st Century.</p>
+    </footer>
+
+    <script>
+        // Simple scroll animation trigger
+        window.addEventListener('scroll', () => {
+            const elements = document.querySelectorAll('.stats-card');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if(rect.top < window.innerHeight - 100) {
+                    el.classList.add('opacity-100');
+                    el.classList.remove('opacity-0');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
